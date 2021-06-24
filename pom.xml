@@ -26,6 +26,20 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <pluginRepositories>
+    <pluginRepository>
+        <id>myRepository</id>
+        <url>http://localhost:8081</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>daily</updatePolicy>
+        </snapshots>
+        <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+        </releases>
+    </pluginRepository>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
