@@ -44,7 +44,7 @@
 
   <build>
     
-    <pluginManagement>
+   <!-- <pluginManagement>
     <plugins>
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
@@ -52,7 +52,7 @@
             <version>2.2</version>
         </plugin>
     </plugins>
-    </pluginManagement>
+    </pluginManagement>-->
     
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -94,6 +94,12 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
+        </plugin>
+        
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>2.2</version>
         </plugin>
         
         <plugin>
